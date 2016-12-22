@@ -1,0 +1,98 @@
+@media screen and (min-width: 992px) {
+  body {
+    font: 16px/21px CenturyGothicRegular;
+  }
+
+  #header {
+    padding: 5px 0;
+
+    .main-nav {
+      >li {
+        margin-left: 30px;
+      }
+    }
+  }
+  .slider-section {
+    #slider-top {
+
+      .content-wrapper {
+        padding: 0 80px;
+      }
+
+      h2 {
+        margin-top: 11%;
+        font-size: 3.5em;
+      }
+    }
+  }
+
+  .content-section {
+    padding: 80px 0;
+
+    li {
+      padding: 0 25px;
+    }
+
+    header {
+      h1 {
+        margin-bottom: 25px;
+      }
+
+      p {
+        margin-bottom: 60px;
+      }
+    }
+  }
+
+  .clients-section {
+    .sl {
+      margin: 0 40px 100px;
+    }
+  }
+
+  #footer {
+    font-size: 12px;
+
+    .footer-col {
+     padding-right: 45px;
+    }
+
+    .tweets {
+      li {
+        margin-bottom: 20px;
+      }
+    }
+
+    .contact {
+
+      dt, dd {
+        display: inline-block;
+      }
+
+      dd {
+        padding: 0;
+      }
+
+      dd.address {
+        display: block;
+        padding-left: 110px;
+      }
+
+      dd.phone {
+        display: block;
+        padding-left: 100px;
+      }
+    }
+
+    .footer-bottom-block {
+      .bottom-nav {
+        li {
+          margin-left: 40px;
+        }
+        a {
+          padding: 0 10px;
+        }
+      }
+    }
+  }
+}

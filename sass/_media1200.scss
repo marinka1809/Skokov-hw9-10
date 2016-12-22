@@ -1,0 +1,13 @@
+@media screen and (min-width: 1200px) {
+  #header {
+    .main-nav {
+      >li {
+        margin-left: 60px;
+      }
+    }
+  }
+
+  #footer {
+    font-size: 13px;
+  }
+}

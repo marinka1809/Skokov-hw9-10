@@ -1,0 +1,120 @@
+@media screen and (min-width: 768px) {
+  body {
+    font: 14px/18px CenturyGothicRegular;
+  }
+
+  #header {
+    padding: 5px 0;
+
+    .logo {
+      width: 116px;
+      height: 116px;
+      overflow: hidden;
+    }
+  }
+  .slider-section {
+    #slider-top {
+      max-height: calc(100vh - 130px);
+
+      .content-wrapper {
+        margin-top: 20px;
+        margin-bottom: 80px;
+        padding: 0 40px;
+      }
+
+      h2 {
+        margin-top: 12%;
+        font-size: 2.4em;
+
+        span.new-line {
+          display: block;
+          margin: 5px 0;
+        }
+      }
+
+      .wrapper-img {
+        margin-left: calc(-100% / 11);
+      }
+
+      .fa {
+        font-size: 50px;
+        line-height: 100px;
+      }
+    }
+  }
+
+  .content-section {
+    padding: 40px 0;
+
+    header {
+      h1 {
+        margin-bottom: 15px;
+      }
+
+      p {
+        margin-bottom: 40px;
+      }
+    }
+
+    .group-block {
+
+    }
+  }
+
+  .portfolio-section {
+    .masonry {
+      margin-bottom: 80px;
+    }
+  }
+
+  .clients-section {
+    .sl {
+      margin: 0 40px 80px;
+
+      .sl_slide {
+        padding: 0 20px;
+      }
+    }
+
+    .slick-prev,
+    .slick-next {
+      &:before {
+        margin-top: -40px;
+        font: 40px/100px FontAwesome;
+      }
+    }
+  }
+
+  #footer {
+    font-size: 11px;
+    padding: 20px 0 0 0;
+
+    .tweets {
+      li {
+        margin-bottom: 15px;
+      }
+    }
+
+    .contact {
+      dt,dd {
+        display: block;
+      }
+      dd,
+      dd.address,
+      dd.phone {
+        padding-left: 50px;
+      }
+    }
+
+    .footer-bottom-block {
+      .bottom-nav {
+        li {
+          margin-left: 5px;
+        }
+        a {
+          padding: 0 3px;
+        }
+      }
+    }
+  }
+}
