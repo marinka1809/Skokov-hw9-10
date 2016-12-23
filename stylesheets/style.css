@@ -365,7 +365,8 @@ body {
     color: #ffea00; }
   #footer .button-link {
     margin-top: 30px;
-    font-size: 15px; }
+    font-size: 1.2em;
+    line-height: 2em; }
   #footer .galery-stream {
     margin: 0 -3px; }
     #footer .galery-stream li {
@@ -551,6 +552,35 @@ body {
       .portfolio-section .portfolio .hover-block a:hover {
         background-color: rgba(66, 65, 70, 0.93); }
 
+.error-section {
+  padding: 30px 0 50px;
+  text-align: center; }
+  .error-section .title {
+    display: block;
+    font-size: 8em;
+    line-height: 1.2em; }
+  .error-section .bg {
+    display: inline-block;
+    margin-bottom: 0.5em;
+    font-size: 2.8em;
+    line-height: 0.8em;
+    color: #ffea00;
+    background-color: #424147; }
+    .error-section .bg strong {
+      display: inline-block;
+      margin-top: -0.2em;
+      padding-bottom: 0.2em; }
+    .error-section .bg .exclamation-mark {
+      font-size: 1.5em; }
+  .error-section .bunch {
+    display: inline-block;
+    margin: 0 5px;
+    padding: 0 1em;
+    line-height: 2em;
+    background-color: #ffea00; }
+  .error-section .button-link {
+    line-height: 2em; }
+
 @media screen and (min-width: 768px) {
   body {
     font: 14px/18px CenturyGothicRegular; }
@@ -611,7 +641,15 @@ body {
   .portfolio-section .portfolio-menu {
     text-align: left; }
   .portfolio-section .portfolio li {
-    margin-bottom: 30px; } }
+    margin-bottom: 30px; }
+  .error-section {
+    padding: 60px 0 120px; }
+    .error-section .title {
+      font-size: 12.5em; }
+    .error-section .bg {
+      font-size: 6em; }
+    .error-section .bunch {
+      margin: 0 5px; } }
 
 @media screen and (min-width: 992px) {
   body {
@@ -662,13 +700,17 @@ body {
     .portfolio-section .portfolio-menu {
       margin-bottom: 40px; }
     .portfolio-section .portfolio li {
-      margin-bottom: 60px; } }
+      margin-bottom: 60px; }
+  .error-section {
+    padding: 80px 0 140px; } }
 
 @media screen and (min-width: 1200px) {
   #header .main-nav > li {
     margin-left: 60px; }
   #footer {
-    font-size: 13px; } }
+    font-size: 13px; }
+  .error-section {
+    padding: 120px 0 200px; } }
 
 @media screen and (min-width: 1400px) {
   .container {
