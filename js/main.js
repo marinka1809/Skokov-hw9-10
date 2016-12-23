@@ -1,5 +1,5 @@
 jQuery(document).ready(function(){
-    $('#masonry').masonry({
+    jQuery('#masonry').masonry({
         // options
         itemSelector: '.item',
         columnWidth: '.grid-sizer',
@@ -13,7 +13,7 @@ jQuery(document).on('click', '[data-toggle="lightbox"]', function(event) {
 });
 
 jQuery(document).ready(function(){
-    $('.sl').slick({
+    jQuery('.sl').slick({
         slidesToShow: 8,
         slidesToScroll: 1,
         responsive: [
