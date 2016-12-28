@@ -97,6 +97,57 @@ body {
   display: block;
 }
 
+.slider-nav {
+  background-color: transparent;
+  width: 5%;
+
+
+  .fa {
+    font-size: 30px;
+    line-height: 60px;
+  }
+
+  .slider-nav-right,
+  .slider-nav-left {
+    margin-top: -50px;
+    width: auto;
+    height: auto;
+    background-color: #000000;
+
+    &:before {
+      content: "";
+    }
+  }
+
+  .slider-nav-right {
+    right: 0;
+    margin-right: 10px;
+    padding: 0 5px 0 10px;
+  }
+
+  .slider-nav-left {
+    left: 0;
+    margin-left: 10px;
+    padding: 0 10px 0 5px;
+  }
+
+}
+
+.element-sidebar {
+  margin-bottom: 15px;
+  padding: 30px 30px 10px;
+  color: #ffffff;
+  text-transform: uppercase;
+  background-color: #403f46;
+
+
+  h2 {
+    margin-bottom: 30px;
+    font-size: 1.25em;
+    color: $second-color;
+    text-transform: uppercase;
+  }
+}
 //---------------------------HEADER------------------------
 #header {
   padding: 5px 0;
@@ -241,38 +292,7 @@ body {
   }
 
   .slider-nav {
-    background-color: transparent;
-    width: 5%;
     opacity: 1;
-
-    .fa {
-      font-size: 30px;
-      line-height: 60px;
-    }
-
-    .slider-nav-right,
-    .slider-nav-left {
-      margin-top: -50px;
-      width: auto;
-      height: auto;
-      background-color: #000000;
-
-      &:before {
-        content: "";
-      }
-    }
-
-    .slider-nav-right {
-      right: 0;
-      margin-right: 10px;
-      padding: 0 5px 0 10px;
-    }
-
-    .slider-nav-left {
-      left: 0;
-      margin-left: 10px;
-      padding: 0 10px 0 5px;
-    }
 
     &:hover {
       opacity: 0.5;
@@ -771,6 +791,166 @@ body {
     line-height: 2em;
   }
 
+}
+
+//----------------------------PROJECT-SECTION-------------------------
+.project-content {
+  font-size: 11px;
+  line-height: 2em;
+
+  #slider-project {
+    margin-bottom: 30px;
+    text-align: center;
+    background-color: #403f46;
+
+    .slider-content {
+      padding: 0 40px;
+    }
+    .slider-img {
+      margin: 0 auto;
+    }
+
+    .slider-nav-bottom {
+      position: static;
+      width: 100%;
+      margin: 0;
+      background-color: #000000;
+
+      li {
+        position: relative;
+        width: auto;
+        height: auto;
+        text-indent: 0;
+        border: none;
+        border-radius: 0;
+
+        &:after {
+          content: "";
+          display: none;
+          position: absolute;
+          top: 0;
+          right: 0;
+          left: 0;
+          bottom: 0;
+          background-color: rgba(255, 234, 0, 0.5);
+          border: 2px solid $second-color;
+        }
+
+        &.active {
+          &:after {
+            display: block;
+          }
+        }
+      }
+
+      img {
+        height: 40px;
+        width: auto;
+      }
+    }
+  }
+
+  .text-wrapper {
+    margin-bottom: 10px;
+    padding: 0 15px;
+
+    h2 {
+      display: inline-block;
+      width: 14em;
+      margin-bottom: 30px;
+      padding: 0 20px;
+      text-align: center;
+      font-size: 1.2em;
+      color: $second-color;
+      text-transform: uppercase;
+      background-color: $dark-primary-color;
+    }
+
+    .last-p {
+      padding-bottom: 30px;
+      margin-bottom: 30px;
+      border-bottom: 1px solid #cacaca;
+    }
+
+    .recent {
+      li {
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
+
+aside {
+ .project-details {
+   margin-left: 3em;
+
+
+   li {
+     margin-bottom: 20px;
+   }
+
+   .fa-li {
+     left: -2em;
+     width: 1.5em;
+     font-size: 1.5em;
+     line-height: 1.2em;
+     color: $dark-primary-color;
+     background-color: $second-color;
+   }
+ }
+
+  .popular-posts {
+
+    li {
+      margin-bottom: 20px;
+      overflow: hidden;
+
+      a {
+        &:hover {
+          transform: scale(1.2, 1.2);
+        }
+      }
+    }
+
+    .link-post {
+      float: left;
+      margin-right: 10px;
+    }
+
+    .info-bottom {
+      text-align: right;
+      text-transform: capitalize;
+      color: $second-color;
+      font-size: 0.8em;
+
+      data {
+        margin-right: 10px;
+      }
+    }
+  }
+
+  .tags {
+    margin-bottom: 30px;
+
+    li {
+      display: inline-block;
+      margin-bottom: 2px;
+
+      a {
+        display: inline-block;
+        padding: 0 10px;
+        color: $dark-primary-color;
+        background-color: $second-color;
+
+        &:hover {
+          text-decoration: none;
+          color: #000000;
+          transform: scale(1.1, 1.1);
+        }
+      }
+
+    }
+  }
 }
 
 @import "media768";

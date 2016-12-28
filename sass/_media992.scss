@@ -120,4 +120,30 @@
   .error-section {
     padding: 80px 0 140px;
   }
+
+  .project-content {
+    font-size: 15px;
+
+    #slider-project {
+      .slider-img {
+        margin: 0 auto;
+      }
+
+      .slider-nav-bottom {
+
+        img {
+          height: auto;
+        }
+      }
+    }
+  }
+
+  .aside {
+
+    .popular-posts {
+      .link-post {
+        float: left;
+      }
+    }
+  }
 }

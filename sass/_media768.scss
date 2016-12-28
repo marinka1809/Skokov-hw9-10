@@ -13,6 +13,10 @@
     }
   }
 
+  .element-sidebar {
+    margin-bottom: 30px;
+  }
+
   #header {
     padding: 5px 0;
 
@@ -138,4 +142,33 @@
     }
   }
 
+  .project-content {
+    font-size: 13px;
+
+    #slider-project {
+      .slider-img {
+        margin: 0 auto;
+      }
+
+      .slider-nav-bottom {
+
+        img {
+          height: 60px;
+        }
+      }
+    }
+
+    .text-wrapper {
+      padding: 0 30px;
+    }
+  }
+
+  .aside {
+
+    .popular-posts {
+      .link-post {
+        float: none;
+      }
+    }
+  }
 }
