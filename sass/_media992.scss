@@ -1,10 +1,15 @@
 @media screen and (min-width: 992px) {
   body {
-    font: 16px/21px CenturyGothicRegular;
+    font: bold 16px/21px CenturyGothicRegular;
   }
 
   .section {
     padding: 80px 0;
+  }
+
+  .content {
+    padding-top: 80px;
+    padding-bottom: 80px;
   }
 
   .header-first-section {
@@ -138,12 +143,19 @@
     }
   }
 
-  .aside {
+  aside {
+    .search-block {
+      padding: 20px 50px;
+    }
 
     .popular-posts {
       .link-post {
         float: left;
       }
     }
+  }
+
+  .blog-nav {
+    margin-bottom: 0;
   }
 }

@@ -15,8 +15,17 @@ $second-color: #ffea00;
   font-weight: normal;
 }
 
+@font-face {
+  font-family: "CodeLight";
+  src: url("../fonts/Code-Light.eot");
+  src: url("../fonts/Code-Light.eot?#iefix")format("embedded-opentype"),
+  url("../fonts/Code-Light.woff") format("woff"),
+  url("../fonts/Code-Light.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
 body {
-  font: 12px/15px CenturyGothicRegular;
+  font: bold 12px/15px CenturyGothicRegular;
   color: $dark-primary-color;
   background-color: #f6f6f6;
 }
@@ -74,6 +83,11 @@ body {
 }
 .section {
   padding: 40px 0;
+}
+
+.content {
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .header-first-section {
@@ -147,7 +161,26 @@ body {
     color: $second-color;
     text-transform: uppercase;
   }
+
+  .fa-ul {
+    margin-left: 3em;
+
+    li {
+      margin-bottom: 20px;
+    }
+  }
+
+  .fa-li {
+    top: -0.2em;
+    left: -2em;
+    width: 1.5em;
+    font-size: 1.5em;
+    line-height: 1.2em;
+    color: $dark-primary-color;
+    background-color: $second-color;
+  }
 }
+
 //---------------------------HEADER------------------------
 #header {
   padding: 5px 0;
@@ -200,7 +233,10 @@ body {
       margin-left: 10px;
       >a { // символы > для увеличения веса сылектора, чтобы перебить бутстраповские стили.
         color: #000000;
+        font-family: CodeLight;
+        font-weight: bold;
         line-height: 2em;
+
         text-transform: uppercase;
 
         &:hover,
@@ -337,7 +373,7 @@ body {
 
       p {
         text-transform: uppercase;
-        font-size: 1.2em;
+        font: bold 1.2em CodeLight;
         text-align: left;
       }
 
@@ -389,7 +425,7 @@ body {
     }
 
     p {
-      font-size: 1.25em;
+      font: bold 1.25em CodeLight;
       text-transform: uppercase;
       margin-bottom: 10px;
     }
@@ -626,8 +662,7 @@ body {
         display: inline-block;
         padding: 0 10px;
         color: #ffffff;
-        line-height: 2.2em;
-        font-size: 1.2em;
+        font: bold 1.2em/2.2em CodeLight;
         text-transform: uppercase;
 
         &:hover,
@@ -881,24 +916,64 @@ body {
 }
 
 aside {
+
  .project-details {
-   margin-left: 3em;
-
-
    li {
-     margin-bottom: 20px;
-   }
-
-   .fa-li {
-     left: -2em;
-     width: 1.5em;
-     font-size: 1.5em;
-     line-height: 1.2em;
-     color: $dark-primary-color;
-     background-color: $second-color;
    }
  }
 
+  .search-block {
+    padding: 20px 20px;
+
+    .search {
+      position: relative;
+
+      button,
+      input {
+        color: #737373;
+        border: none;
+      }
+
+      input {
+        width: 100%;
+        padding: 0 50px 0 15px;
+        font-size: 1.2em;
+        line-height: 1.4em;
+        border-radius: 30px;
+        background-color: #f6f6f6;
+
+        &:focus {
+          box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2), inset 0 1px 2px rgba(0, 0, 0, 0.4);
+        }
+      }
+
+      button {
+        position: absolute;
+        top: 0.1 em;
+        right: 15px;
+        font-size: 1.3em;
+        cursor: pointer;
+        background: none;
+        opacity: 0.6;
+
+       &:hover {
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  .archive,
+  .categories {
+    a {
+      color: inherit;
+
+      &:hover {
+        color: #cacaca;
+        text-decoration: none;
+      }
+    }
+  }
   .popular-posts {
 
     li {
@@ -951,6 +1026,119 @@ aside {
 
     }
   }
+}
+
+//------------------NEWS-LIST-SECTION-------------------
+.news-list-section {
+  overflow: hidden;
+
+  li {
+    margin-bottom: 30px;
+    float: left;
+  }
+
+  .item {
+    margin-bottom: 30px;
+  }
+
+  .introduction {
+    padding: 5px 40px 0;
+    line-height: 1.3em;
+    color: #000000;
+    font-style: italic;
+    background-color: $second-color;
+
+    q {
+      font-size: 1.3em;
+      text-align: center;
+    }
+
+    cite {
+      display: block;
+      text-align: right;
+      font-size: 0.7em;
+    }
+  }
+
+  .news {
+    background-color: $second-color;
+
+    .text-block {
+      overflow: hidden;
+      position: relative;
+      padding: 20px;
+
+      &:before {
+        content: '';
+        position: absolute;
+        z-index: 2;
+        top: -32px;
+        right: 12%;
+        border: 16px solid transparent;
+        border-bottom: 16px solid $second-color;
+      }
+    }
+
+    h1{
+      margin-bottom: 20px;
+      text-transform: uppercase;
+      font-size: 1.5em;
+      line-height: 1.3em;
+      color: #000000;
+    }
+
+    p {
+      margin-bottom: 20px;
+      font-size: 0.9em;
+      color: #5e5e5e;
+    }
+
+    .info-news,
+    .fa-heart {
+      font-size: 0.75em;
+    }
+
+    .fa-heart {
+      color: #5e5e5e;
+    }
+
+    .info-news {
+      float: right;
+      color: #000000;
+      font-style: italic;
+    }
+  }
+}
+
+.blog-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+
+  li {
+    display: inline-block;
+
+    a {
+      display: inline-block;
+      color: inherit;
+      font-size: 1.2em;
+      line-height: 1.5em;
+      padding: 0 0.6em;
+
+      &:hover,
+      &.active {
+        background-color: $second-color;
+        text-decoration: none;
+      }
+    }
+  }
+
+  .page-numbers {
+    text-align: center;
+  }
+
 }
 
 @import "media768";

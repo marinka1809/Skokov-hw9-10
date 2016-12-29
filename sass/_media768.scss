@@ -1,6 +1,6 @@
 @media screen and (min-width: 768px) {
   body {
-    font: 14px/18px CenturyGothicRegular;
+    font: bold 14px/18px CenturyGothicRegular;
   }
 
   .header-first-section {
@@ -163,10 +163,11 @@
     }
   }
 
-  .aside {
+  aside {
 
     .popular-posts {
       .link-post {
+        display: block;
         float: none;
       }
     }

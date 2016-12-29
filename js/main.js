@@ -7,6 +7,14 @@ jQuery(document).ready(function(){
     });
 });
 
+jQuery(document).ready(function(){
+    jQuery('#news-list-section').masonry({
+        // options
+        itemSelector: '.item',
+        percentPosition: true
+    });
+});
+
 jQuery(document).on('click', '[data-toggle="lightbox"]', function(event) {
     event.preventDefault();
     $(this).ekkoLightbox();
