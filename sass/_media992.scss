@@ -128,6 +128,7 @@
 
   .project-content {
     font-size: 15px;
+  }
 
     #slider-project {
       .slider-img {
@@ -142,32 +143,32 @@
       }
     }
 
-    .post-header {
-      margin-bottom: 50px;
+  .post-header {
+     margin-bottom: 50px;
+   }
+
+  .img-wrapper {
+    padding: 30px;
+  }
+
+  .comments {
+    .icon-wrapper {
+      margin-right: 10px;
+      width: 50px;
+      height: 50px;
     }
 
-    .img-wrapper {
-      padding: 30px;
-    }
+    li {
+      margin-bottom: 40px;
 
-    .comments {
-      .icon-wrapper {
-        margin-right: 10px;
-        width: 50px;
-        height: 50px;
-      }
-
-      li {
-        margin-bottom: 40px;
-
-        > ul {
-          > li {
-            margin: 40px 0 0 60px;
-          }
+      > ul {
+        > li {
+          margin: 40px 0 0 60px;
         }
       }
     }
   }
+
 
   aside {
     .search-block {

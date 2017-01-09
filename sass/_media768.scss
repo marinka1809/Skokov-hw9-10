@@ -144,24 +144,25 @@
 
   .project-content {
     font-size: 13px;
+  }
 
-    #slider-project {
-      .slider-img {
-        margin: 0 auto;
-      }
-
-      .slider-nav-bottom {
-
-        img {
-          height: 60px;
-        }
-      }
+  #slider-project {
+    .slider-img {
+      margin: 0 auto;
     }
 
-    .text-wrapper {
-      padding: 0 30px;
+    .slider-nav-bottom {
+
+      img {
+        height: 60px;
+      }
     }
   }
+
+  .text-wrapper {
+    padding: 0 30px;
+  }
+
 
   aside {
 

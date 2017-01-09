@@ -182,7 +182,6 @@ body {
 }
 
 .text-block {
-  //overflow: hidden;
   position: relative;
   padding: 20px;
 
@@ -728,6 +727,7 @@ body {
     background-color: $dark-primary-color;
   }
 }
+
 //----------------------------PORTFOLIO-SECTION-------------------------
 .portfolio-section {
   margin-bottom: 20px;
@@ -863,228 +863,351 @@ body {
 
 }
 
-//----------------------------PROJECT-SECTION-------------------------
+//----------------------------PROJECT-CONTENT-------------------------
 .project-content {
   font-size: 11px;
   line-height: 2em;
 
-  #slider-project {
+  .section {
+       padding-top: 0;
+  }
+
+  h2,
+  .caption-photo {
+    display: inline-block;
+    width: 14em;
     margin-bottom: 30px;
+    padding: 0 20px;
     text-align: center;
-    background-color: #403f46;
-
-    .slider-content {
-      padding: 0 40px;
-    }
-
-    .slider-img {
-      margin: 0 auto;
-    }
-
-    .slider-nav-bottom {
-      position: static;
-      width: 100%;
-      margin: 0;
-      background-color: #000000;
-
-      li {
-        position: relative;
-        width: auto;
-        height: auto;
-        text-indent: 0;
-        border: none;
-        border-radius: 0;
-
-        &:after {
-          content: "";
-          display: none;
-          position: absolute;
-          top: 0;
-          right: 0;
-          left: 0;
-          bottom: 0;
-          background-color: rgba(255, 234, 0, 0.5);
-          border: 2px solid $second-color;
-        }
-
-        &.active {
-          &:after {
-            display: block;
-          }
-        }
-      }
-
-      img {
-        height: 40px;
-        width: auto;
-      }
-    }
+    font-size: 1.2em;
+    color: $second-color;
+    text-transform: uppercase;
+    background-color: $dark-primary-color;
   }
 
-  .text-wrapper {
-    margin-bottom: 10px;
-    padding: 0 15px;
-
-    h2 {
-      display: inline-block;
-      width: 14em;
-      margin-bottom: 30px;
-      padding: 0 20px;
-      text-align: center;
-      font-size: 1.2em;
-      color: $second-color;
-      text-transform: uppercase;
-      background-color: $dark-primary-color;
-    }
-
-    .bottom-line {
-      padding-bottom: 30px;
-      margin-bottom: 30px;
-      border-bottom: 1px solid #cacaca;
-    }
+  .header-in-about-us {
+    text-align: center;
+    margin-bottom: 30px;
   }
 
-  .recent {
+}
+//----------------------------SLIDER-PROJECT-------------------------
+#slider-project {
+  margin-bottom: 30px;
+  text-align: center;
+  background-color: #403f46;
+
+  .slider-content {
+    padding: 0 40px;
+  }
+
+  .slider-img {
+    margin: 0 auto;
+  }
+
+  .slider-nav-bottom {
+    position: static;
+    width: 100%;
+    margin: 0;
+    background-color: #000000;
+
     li {
-      margin-bottom: 10px;
+      position: relative;
+      width: auto;
+      height: auto;
+      text-indent: 0;
+      border: none;
+      border-radius: 0;
 
-      a {
-        display: block;
-        font-size: 0.9em;
-        color: inherit;
-        text-transform: uppercase;
-        background-color: $second-color;
+      &:after {
+        content: "";
+        display: none;
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        background-color: rgba(255, 234, 0, 0.5);
+        border: 2px solid $second-color;
+      }
 
-        &:hover {
-          text-decoration: none;
-          transform: scale(1.1, 1.1);
+      &.active {
+        &:after {
+          display: block;
         }
       }
+    }
 
-      .text-block {
-        display: block;
-        padding: 0 15px;
-      }
+    img {
+      height: 40px;
+      width: auto;
     }
   }
+}
 
-  .post-header {
-    margin-bottom: 20px;
-    background-color: $second-color;
+//----------------------------TEXT-WRAPPER-------------------------
+.text-wrapper {
+  margin-bottom: 10px;
+  padding: 0 15px;
+
+  .bottom-line {
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #cacaca;
+  }
+}
+
+//----------------------------RECENT-------------------------
+
+.recent {
+  li {
+    margin-bottom: 10px;
+
+    a {
+      display: block;
+      font-size: 0.9em;
+      color: inherit;
+      text-transform: uppercase;
+      background-color: $second-color;
+
+      &:hover {
+        text-decoration: none;
+        transform: scale(1.1, 1.1);
+      }
+    }
 
     .text-block {
-      padding-bottom: 0;
-    }
-
-    h1 {
-      margin-bottom: 15px;
-      text-transform: uppercase;
-      font-size: 2em;
-      color: #000000;
-    }
-
-    .top-info {
-      text-align: right;
-    }
-
-    .fa-heart {
-      margin-right: 20px;
-    }
-
-    .info-news {
-      float: none;
+      display: block;
+      padding: 0 15px;
     }
   }
+}
 
-  .img-wrapper {
-    text-align: center;
-    padding: 10px;
+//----------------------------POST-------------------------
+.post-header {
+  margin-bottom: 20px;
+  background-color: $second-color;
 
-    .img-post {
-      max-width: 100%;
-      height: auto;
-    }
+  .text-block {
+    padding-bottom: 0;
   }
 
-  .share-post {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin-top: 30px;
+  h1 {
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    font-size: 2em;
+    color: #000000;
+  }
 
-    h2 {
-      margin-bottom: 0;
-    }
+  .top-info {
+    text-align: right;
+  }
 
-    .fa-ul {
-      margin-left: 1em;
-    }
+  .fa-heart {
+    margin-right: 20px;
+  }
 
-    li {
+  .info-news {
+    float: none;
+  }
+}
+
+.img-wrapper {
+  text-align: center;
+  padding: 10px;
+
+  .img-post {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+.share-post {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 30px;
+
+  h2 {
+    margin-bottom: 0;
+  }
+
+  .fa-ul {
+    margin-left: 1em;
+  }
+
+  li {
+    display: inline-block;
+    margin-left: 2em;
+    margin-bottom: 5px;
+
+    a {
       display: inline-block;
-      margin-left: 2em;
-      margin-bottom: 5px;
+      padding: 0 1em;
+      color: inherit;
+      background-color: $second-color;
 
-      a {
-        display: inline-block;
-        padding: 0 1em;
-        color: inherit;
-        background-color: $second-color;
-
-        &:hover {
-          transform: scale(1.2, 1.2);
-          text-decoration: none;
-        }
+      &:hover {
+        transform: scale(1.2, 1.2);
+        text-decoration: none;
       }
+    }
 
-      .fa-li {
-        top: 0;
-        left: -2em;
-        font-size: 1em;
-        line-height: 2em;
-        color: #ffffff;
-        background-color: #000000;
+    .fa-li {
+      top: 0;
+      left: -2em;
+      font-size: 1em;
+      line-height: 2em;
+      color: #ffffff;
+      background-color: #000000;
+    }
+  }
+}
+
+//----------------------------COMMENTS-------------------------
+.comments {
+  .icon-wrapper {
+    float: left;
+    margin-right: 5px;
+    width: 30px;
+    height: 30px;
+    overflow: hidden;
+  }
+
+  li {
+    margin-bottom: 20px;
+
+    > ul {
+      > li {
+        margin: 20px 0 0 35px;
       }
     }
   }
-  .comments {
-    .icon-wrapper {
-      float: left;
-      margin-right: 5px;
-      width: 30px;
-      height: 30px;
-      overflow: hidden;
-    }
 
-    li {
+  .text-comment {
+    overflow: hidden;
+  }
+
+  .info-comment {
+    color: #000000;
+    line-height: 1em;
+    margin-bottom: 1em;
+
+    .autor,
+    .time {
+      &:after {
+        content: "/";
+        margin: 0 1.3em 0 1.3em;
+      }
+    }
+  }
+}
+
+//----------------------------ABOUT-US.html-------------------------
+.introductory-section {
+  margin-top: 60px;
+  line-height: 1.4em;
+
+  .img-title {
+    margin-bottom: 30px;
+  }
+
+  header {
+    h1 {
       margin-bottom: 20px;
-
-      > ul {
-        > li {
-          margin: 20px 0 0 35px;
-        }
-      }
+      font-size: 2em;
+      text-transform: uppercase;
+      font-weight: normal;
     }
-
-    .text-comment {
-      overflow: hidden;
+    .header-p {
+      margin-bottom: 20px;
+      font-weight: bold;
     }
+  }
 
-    .info-comment {
-      color: #000000;
-      line-height: 1em;
-      margin-bottom: 1em;
+  p {
+    margin-bottom: 10px;
+    font-weight: normal;
+  }
+}
 
-      .autor,
-      .time {
-        &:after {
-          content: "/";
-          margin: 0 1.3em 0 1.3em;
-        }
+.skills-section {
+  li {
+    margin-bottom: 15px;
+    font-size: 1.1em;
+  }
 
+  .percent {
+    float: left;
+    padding: 0 0.3em;
 
-      }
+    color: $second-color;
+    font-weight: normal;
+    background-color: #000000;
+  }
+
+  .full-band {
+    overflow: hidden;
+    background-color: $dark-primary-color;
+  }
+
+  .skill-name {
+    padding: 0 10px;
+    text-transform: uppercase;
+    background-color: $second-color;
+
+    &.photoshop {
+      width: 90%;
     }
+    &.html-css {
+      width: 87%;
+    }
+    &.wordpress {
+      width: 70%;
+    }
+    &.javascript {
+      width: 75%;
+    }
+    &.illustrator {
+      width: 80%;
+    }
+    &.php {
+      width: 76%;
+    }
+    &.joomla {
+      width: 65%;
+    }
+    &.mysql {
+      width: 85%;
+    }
+  }
+}
+
+.section-team {
+  li {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  .photo-wrapper {
+    display: inline-block;
+    max-width: 200px;
+    max-height: 200px;
+    overflow: hidden;
+    border: 4px solid $second-color;
+    border-radius: 50%;
+
+    &:hover {
+      transform: scale(1.1, 1.1)
+    }
+  }
+
+  .caption-photo {
+    width: 13em;
+    margin-bottom: 0;
+    padding: 0 5px;
+    font-size: 0.9em;
+    line-height: 1.4em;
   }
 }
 
