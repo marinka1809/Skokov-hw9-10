@@ -24,6 +24,7 @@ $second-color: #ffea00;
   font-style: normal;
   font-weight: normal;
 }
+
 body {
   font: bold 12px/15px CenturyGothicRegular;
   color: $dark-primary-color;
@@ -215,6 +216,55 @@ body {
   }
 }
 
+.contact {
+  dt,dd {
+    display: inline-block;
+  }
+
+  dt.address,
+  dt.phone,
+  dt.mail {
+    &:before {
+      display: inline-block;
+      width: 30px;
+      margin-right: 20px;
+      color: #ffffff;
+      font: 1.3em/30px FontAwesome;
+      text-align: center;
+      background-color: #000000;
+    }
+  }
+
+  dd.address,
+  dd.phone{
+    display: block;
+    padding-left: 95px;
+    margin-bottom: 20px;
+  }
+
+  dd.phone {
+    padding-left: 90px;
+  }
+
+  dt.address {
+    &:before {
+      content: "\f041";
+    }
+  }
+
+  dt.phone {
+    &:before {
+      content: "\f232";
+    }
+  }
+
+  dt.mail {
+    &:before {
+      content: "\f0e0";
+    }
+  }
+}
+
 //---------------------------HEADER------------------------
 #header {
   padding: 5px 0;
@@ -248,7 +298,32 @@ body {
     }
   }
 
+  .collapsing {
+    position: absolute;
+    top: 85px;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    background-color: #f6f6f6;
+
+    .main-nav {
+      padding-top: 0;
+      > li {
+        > a { // символы > для увеличения веса сылектора, чтобы перебить бутстраповские стили.
+          font-size: 1em;
+          line-height: 1em;
+        }
+      }
+    }
+  }
+
   .collapse.in {
+    position: absolute;
+    top: 85px;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    background-color: #f6f6f6;
 
     .main-nav {
       padding-top: 0;
@@ -608,54 +683,6 @@ body {
     }
   }
 
-  .contact {
-    dt,dd {
-      display: inline-block;
-    }
-
-    dt.address,
-    dt.phone,
-    dt.mail {
-      &:before {
-        display: inline-block;
-        width: 30px;
-        margin-right: 20px;
-        font: 1.3em/30px FontAwesome;
-        text-align: center;
-        background-color: #000000;
-      }
-    }
-
-    dd.address,
-    dd.phone{
-      display: block;
-      padding-left: 95px;
-      margin-bottom: 20px;
-    }
-
-    dd.phone {
-      padding-left: 90px;
-    }
-
-    dt.address {
-      &:before {
-        content: "\f041";
-      }
-    }
-
-    dt.phone {
-      &:before {
-        content: "\f232";
-      }
-    }
-
-    dt.mail {
-      &:before {
-        content: "\f0e0";
-      }
-    }
-  }
-
   #mc_embed_signup {
     margin-top: 20px;
 
@@ -888,6 +915,26 @@ body {
   .header-in-about-us {
     text-align: center;
     margin-bottom: 30px;
+  }
+
+  iframe {
+    width: 100%;
+    height: 250px;
+    margin-bottom: 40px;
+  }
+
+  .contact {
+    font-size: 0.9em;
+
+    a {
+      color: inherit;
+    }
+    .link-mail {
+      padding: 0 5px;
+      color: $second-color;
+      background-color: $dark-primary-color;
+
+    }
   }
 
 }
@@ -1211,6 +1258,61 @@ body {
   }
 }
 
+//----------------------contact.html-------------------
+
+#message-form {
+  overflow: hidden;
+  margin-bottom: 30px;
+
+  .list-input {
+    margin-right: -10px;
+    margin-left: -10px;
+  }
+
+  li {
+    padding: 0 10px;
+  }
+
+  input,
+  textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 0 20px;
+    line-height: 3em;
+    border: 0;
+  }
+
+  input[placeholder],
+  textarea[placeholder]  {
+    color: $dark-primary-color;
+  }
+
+  input::-webkit-input-placeholder,
+  textarea::-webkit-input-placeholder {
+    color: $dark-primary-color;
+  }
+
+  input::-moz-placeholder,
+  textarea::-moz-placeholder {
+    color: $dark-primary-color;
+  }
+
+  input:-moz-placeholder,
+  textarea:-moz-placeholder {
+    color: $dark-primary-color;
+  }
+
+  input:-ms-input-placeholder,
+  textarea:-ms-input-placeholder {
+    color: $dark-primary-color;
+  }
+
+  .button-link {
+    float: right;
+    line-height: 2em;
+  }
+}
+
 //----------------------ASIDE----------------------
 aside {
 
@@ -1405,7 +1507,6 @@ aside {
   .page-numbers {
     text-align: center;
   }
-
 }
 
 @import "media768";

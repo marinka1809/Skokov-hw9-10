@@ -1,4 +1,26 @@
 @media screen and (min-width: 1200px) {
+
+  .contact {
+
+    dt, dd {
+      display: inline-block;
+    }
+
+    dd {
+      padding: 0;
+    }
+
+    dd.address {
+      display: block;
+      padding-left: 110px;
+    }
+
+    dd.phone {
+      display: block;
+      padding-left: 100px;
+    }
+  }
+
   #header {
     .main-nav {
       >li {
@@ -13,5 +35,12 @@
 
   .error-section {
     padding: 120px 0 200px;
+  }
+
+  .project-content {
+
+    iframe {
+      height: 650px;
+    }
   }
 }

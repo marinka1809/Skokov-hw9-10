@@ -22,6 +22,8 @@
     }
   }
 
+
+
   #header {
     padding: 5px 0;
 
@@ -75,27 +77,6 @@
       }
     }
 
-    .contact {
-
-      dt, dd {
-        display: inline-block;
-      }
-
-      dd {
-        padding: 0;
-      }
-
-      dd.address {
-        display: block;
-        padding-left: 110px;
-      }
-
-      dd.phone {
-        display: block;
-        padding-left: 100px;
-      }
-    }
-
     .footer-bottom-block {
       .bottom-nav {
         li {
@@ -128,6 +109,10 @@
 
   .project-content {
     font-size: 15px;
+
+    iframe {
+      margin-bottom: 80px;
+    }
   }
 
     #slider-project {

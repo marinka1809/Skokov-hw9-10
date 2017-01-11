@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <script src="https://use.fontawesome.com/95a5ddb753.js"></script>
+    <script src="js/libs.min.js"></script>
 
     <link rel="stylesheet" href="stylesheets/libs.min.css" type="text/css"/>
     <link href="stylesheets/style.css" rel="stylesheet" type="text/css" />
 
-    <title>homework 9</title>
+    <title>Skokov contact </title>
 </head>
 <body>
 <header id="header">
@@ -36,10 +37,10 @@
                 <nav class="collapse navbar-collapse" id="navbar-collapse-top">
                     <ul class="nav navbar-nav navbar-right main-nav">
                         <li><a href="index.html">Home</a></li>
-                        <li><a href="portfolio.html">Porfolio</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
                         <li><a href="blog.html">Blog</a></li>
                         <li><a href="about-us.html">About us</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                        <li><a class="active" href="#">Contact</a></li>
                     </ul>
                 </nav><!-- /.navbar-collapse -->
             </div><!-- /.container-->
@@ -48,22 +49,56 @@
 </header>
 <section class="title-section">
     <div class="container">
-        <h1>404 error</h1>
+        <h1>Contact</h1>
     </div>
 </section>
-<section class="section error-section">
+<section class="section project-content">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3607.0605556938417!2d13.36478731462006!3d38.11684507462845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1484086937840" frameborder="0" style="border:0" allowfullscreen></iframe>
     <div class="container">
-        <strong class="title">404</strong>
-        <div>
-            <div class="bg">
-                <strong>page not found
-                    <span class="exclamation-mark">!</span>
-                </strong>
+        <div class="row">
+            <div class="col-sm-8 col-lg-7">
+                <h2>Send us a message</h2>
+                <form action="#" method="get" id="message-form">
+                    <ul class="row list-input">
+                        <li class="col-sm-4">
+                            <input type="text" name="name" placeholder="name ...">
+                        </li>
+                        <li class="col-sm-4">
+                            <input type="email" name="email" placeholder="email ...">
+                        </li>
+                        <li class="col-sm-4">
+                            <input type="text" name="subject" placeholder="subject ...">
+                        </li>
+                    </ul>
+                    <textarea name="massage-text" rows="4" placeholder="message ..."></textarea>
+                    <button class="button-link" type="submit">Send a message</button>
+                </form>
+            </div>
+            <div class="col-sm-4 col-lg-4 col-lg-offset-1">
+                <h2>Contac info</h2>
+                <address>
+                    <dl class="contact">
+                        <dt class="address">Address:</dt>
+                        <dd>12569 Saint Patrick des Pres,</dd>
+                        <dd class="address">85000 Paris, France</dd>
+                        <dt class="phone">Phone:</dt>
+                        <dd>
+                            <a href="tel:+380458454578">+38 045 845-45-78</a>
+                        </dd>
+                        <dd class="phone">
+                            <a href="tel:+380458454579">+38 045 845-45-79</a>
+                        </dd>
+                        <dt class="mail">E-mail:</dt>
+                        <dd>
+                            <a class="link-mail" href="mailto:freeforwebdesign@gmail.com">freeforwebdesign@gmail.com</a>
+                        </dd>
+                    </dl>
+                </address>
             </div>
         </div>
-        <a href="index.html" class="button-link">Back to homepage</a>
-        <span class="bunch">or</span>
-        <a href="#" class="button-link">Our Blog</a>
+
+
+
     </div>
 </section>
 <footer id="footer" >
@@ -223,14 +258,15 @@
                 <p>Copyright 2013 - FreeForWebDesign.com - All Rights Reserved</p>
                 <ul class="bottom-nav">
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="portfolio.html">Porfolio</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
                     <li><a href="blog.html">Blog</a></li>
                     <li><a href="about-us.html">About us</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="#">Contact</a></li>
                 </ul>
             </div>
         </div>
     </div>
 </footer>
+<script src="js/popup.js"></script>
 </body>
 </html>
