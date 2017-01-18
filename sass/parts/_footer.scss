@@ -1,0 +1,145 @@
+//----------------------------FOOTER-------------------------
+#footer {
+  padding: 20px 0 0 0;
+  font-size: 10px;
+  color: #ffffff;
+  background-color: #3f3f44;
+
+  a {
+    color: inherit;
+  }
+
+  .footer-section {
+    overflow: hidden;
+    margin-bottom: 30px;
+  }
+
+  .footer-title {
+    font-size: 1.4em;
+    margin-bottom: 25px;
+  }
+
+  .footer-link {
+    color: $second-color;
+  }
+
+  .button-link {
+    margin-top: 30px;
+    font-size: 1.2em;
+    line-height: 2em;
+  }
+
+  .galery-stream {
+    margin: 0 -3px;
+
+    li {
+      padding: 0 3px 6px;
+    }
+  }
+
+  .tweets-section {
+    margin-bottom: 0;
+  }
+
+  .tweets {
+    margin-left: 2.8em;
+
+    li{
+      margin-bottom: 20px;
+    }
+
+    .fa-li {
+      top: 0.5em;
+      font-size: 1.8em;
+    }
+
+    .new-line-link {
+      display: block;
+      color: inherit;
+    }
+
+    .show-date {
+      display: block;
+      color: $second-color;
+      font-size: 0.7em;
+    }
+  }
+
+  .social-title {
+    display: inline-block;
+  }
+
+  .social-icon {
+    display: inline-block;
+    text-align: center;
+
+    li {
+      display: inline-block;
+      width: 30px;
+      margin-right: 2px;
+      margin-bottom: 2px;
+      text-align: center;
+      line-height: 30px;
+      background-color: #000000;
+      cursor: pointer;
+    }
+
+    .fa {
+      font-size: 1.3em;
+      color: #FFFFFF;
+    }
+  }
+
+  #mc_embed_signup {
+    margin-top: 20px;
+
+    .email {
+      width: 250px;
+      max-width: calc(100% - 30px);
+      color: #ffffff;
+      background-color: transparent;
+      border: none;
+      border-bottom: 2px solid $second-color;
+    }
+    .button{
+      width: 20px;
+      padding: 0 4px;
+      background-color: #000000;
+      border: none;
+    }
+  }
+
+  .footer-bottom-block {
+    background-color: #000000;
+
+    .wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 0;
+    }
+
+    .bottom-nav {
+      text-align: center;
+      li {
+        display: inline-block;
+        margin-left: 50px;
+      }
+
+      a {
+        display: inline-block;
+        padding: 0 10px;
+        color: #ffffff;
+        font: bold 1.2em/2.2em CodeLight;
+        text-transform: uppercase;
+
+        &:hover,
+        &:focus {
+          color: #000000;
+          background-color:$second-color;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
