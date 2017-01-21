@@ -406,10 +406,12 @@ aside .categories a {
 aside .popular-posts li {
   margin-bottom: 20px;
   overflow: hidden; }
-  aside .popular-posts li a:hover {
-    -webkit-transform: scale(1.2, 1.2);
-        -ms-transform: scale(1.2, 1.2);
-            transform: scale(1.2, 1.2); }
+  aside .popular-posts li a {
+    color: inherit; }
+    aside .popular-posts li a:hover {
+      -webkit-transform: scale(1.2, 1.2);
+          -ms-transform: scale(1.2, 1.2);
+              transform: scale(1.2, 1.2); }
 
 aside .popular-posts .link-post {
   float: left;
